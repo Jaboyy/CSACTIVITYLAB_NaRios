@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h2 id="tie"> </h2>
+    <h2 id="apple"></h2>
+    <h1 id="orange"> </h1>
+
+    <h2 id="jb"></h2>
+    <h1 id="o"></h1>
+
+    <script>
+        var x= Math.floor(Math.random () * 1001);
+        document.getElementById("tie").innerHTML= "Randomly generated number: " + x;
+
+        var a = Math.floor(x/100) ;
+
+        var b = Math.floor((x%100)/10);
+
+        var c= Math.floor(x%10);
+
+        if (x<=100){
+           
+            var a = Math.floor(x/100) ;
+
+            var d = Math.floor((x%100)/10);
+
+            var e= Math.floor(x%10);
+           
+
+            
+            document.getElementById("jb").innerHTML= "Breakdown: " +  d + "0 " +  e;
+            
+            var z = new Date(2024,3,34,20,34,46);
+            document.getElementById ("o").innerHTML = z;
+           
+        }
+        
+        else{
+
+            document.getElementById("apple").innerHTML= "Breakdown: " + a + "00 " +  b + "0 " +  c;
+            
+            var z = new Date(2024,3,34,20,34,46);
+            document.getElementById ("o").innerHTML = z;
+           
+
+            }
+        
+       
+
+    </script>
+</body>
+</html>
